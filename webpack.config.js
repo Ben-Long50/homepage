@@ -3,14 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: {
-    bundle: path.resolve(__dirname, 'src/index.js'),
-  },
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js',
-    clean: true,
-    assetModuleFilename: '[name][ext]',
+    filename: 'bundle.js',
   },
   devtool: 'source-map',
   devServer: {
@@ -25,6 +21,10 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.(html)$/,
+        use: ['html-loader'],
+      },
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
@@ -42,6 +42,9 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif|ttf|otf)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'assets/img/[name].[hash:8][ext]',
+        },
       },
     ],
   },

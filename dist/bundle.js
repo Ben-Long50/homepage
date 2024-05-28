@@ -16,12 +16,262 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/github.svg */ "./src/assets/github.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/linkedin.svg */ "./src/assets/linkedin.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/twitter.svg */ "./src/assets/twitter.svg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `body {
+  --fs-1: 2rem;
+  --fs-2: 1.5rem;
+  --fs-3: 1rem;
+  --icon-1: 3rem;
+  --icon-2: 2rem;
+  --icon-3: 1rem;
+  --box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.7);
+  --accent-color: rgb(92, 168, 92);
+  --bg-lvl-1: #121212;
+  --bg-lvl-2: rgba(255, 255, 255, 0.05);
+}
+
+.dark-theme {
+  background-color: var(--bg-lvl-1);
+  color: white;
+}
+
+.icon-1 {
+  display: block;
+  height: var(--icon-1);
+  width: var(--icon-1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-2 {
+  display: block;
+  height: var(--icon-2);
+  width: var(--icon-2);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-3 {
+  font-size: var(--icon-3);
+}
+
+.icon-dark {
+  background-color: white;
+}
+
+.icon-light {
+  background-color: #121212;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 2em 0;
+}
+
+.header,
+.main,
+.footer {
+  box-sizing: border-box;
+  padding: 0 2rem;
+}
+
+.header {
+  box-sizing: border-box;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  background-color: var(--accent-color);
+  transform: scaleY(2) translateY(-35.5%) skewY(-7deg);
+  width: 100vw;
+  box-shadow: var(--box-shadow);
+}
+
+.header-container {
+  display: flex;
+  max-width: 1000px;
+  transform: translateY(35.5%) skewY(7deg) scaleY(0.5);
+}
+
+.header-image {
+  box-shadow: var(--box-shadow);
+  width: 30%;
+  height: auto;
+  z-index: 1;
+}
+
+.header-background {
+  margin: 2rem 0;
+}
+
+.header-info-container {
+  height: 100%;
+  width: 100%;
+  color: inherit;
+  background-color: var(--bg-lvl-2);
+  box-shadow: var(--box-shadow);
+  box-sizing: border-box;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-title {
+  align-self: flex-start;
+  font-size: var(--fs-1);
+}
+
+.header-info {
+  font-size: var(--fs-2);
+  line-height: 2rem;
+  width: 100%;
+  align-self: center;
+  text-align: left;
+}
+
+.header-buttons {
+  align-self: flex-end;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.github {
+  mask-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
+}
+
+.linkedin {
+  mask-image: url(${___CSS_LOADER_URL_REPLACEMENT_1___});
+}
+.twitter {
+  mask-image: url(${___CSS_LOADER_URL_REPLACEMENT_2___});
+}
+
+.main {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.section {
+  flex-grow: 1;
+  max-width: 1000px;
+}
+
+.project-section-title {
+  font-size: var(--fs-1);
+  width: 100%;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 4 / 5;
+  background-color: var(--bg-lvl-2);
+  box-shadow: var(--box-shadow);
+}
+
+.screenshot {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.project-info {
+  width: 100%;
+  height: 40%;
+}
+
+.project-title {
+}
+.project-buttons {
+}
+.link {
+}
+.project-description {
+}
+
+.footer {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--accent-color);
+  transform-origin: top;
+  transform: translateY(4rem);
+}
+
+.footer-container {
+  background-color: var(--bg-lvl-1);
+  transform: translateY(-4rem);
+  display: flex;
+  max-width: 1000px;
+  box-shadow: var(--box-shadow);
+}
+
+.footer-info {
+  height: 100%;
+  background-color: var(--bg-lvl-2);
+  flex-grow: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-title {
+  font-size: var(--fs-1);
+}
+
+.footer-desc {
+  font-size: var(--fs-3);
+}
+
+.address {
+  font-size: var(--fs-3);
+}
+
+.contact-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-info {
+  font-size: var(--fs-3);
+}
+.footer-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-image {
+  width: 30%;
+}
+`, "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,cAAc;EACd,YAAY;EACZ,cAAc;EACd,cAAc;EACd,cAAc;EACd,iDAAiD;EACjD,gCAAgC;EAChC,mBAAmB;EACnB,qCAAqC;AACvC;;AAEA;EACE,iCAAiC;EACjC,YAAY;AACd;;AAEA;EACE,cAAc;EACd,qBAAqB;EACrB,oBAAoB;EACpB,sBAAsB;EACtB,4BAA4B;EAC5B,2BAA2B;AAC7B;;AAEA;EACE,cAAc;EACd,qBAAqB;EACrB,oBAAoB;EACpB,sBAAsB;EACtB,4BAA4B;EAC5B,2BAA2B;AAC7B;;AAEA;EACE,wBAAwB;AAC1B;;AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,sBAAsB;EACtB,cAAc;AAChB;;AAEA;;;EAGE,sBAAsB;EACtB,eAAe;AACjB;;AAEA;EACE,sBAAsB;EACtB,eAAe;EACf,aAAa;EACb,uBAAuB;EACvB,qCAAqC;EACrC,oDAAoD;EACpD,YAAY;EACZ,6BAA6B;AAC/B;;AAEA;EACE,aAAa;EACb,iBAAiB;EACjB,oDAAoD;AACtD;;AAEA;EACE,6BAA6B;EAC7B,UAAU;EACV,YAAY;EACZ,UAAU;AACZ;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,cAAc;EACd,iCAAiC;EACjC,6BAA6B;EAC7B,sBAAsB;EACtB,eAAe;EACf,aAAa;EACb,SAAS;EACT,sBAAsB;EACtB,8BAA8B;AAChC;;AAEA;EACE,sBAAsB;EACtB,sBAAsB;AACxB;;AAEA;EACE,sBAAsB;EACtB,iBAAiB;EACjB,WAAW;EACX,kBAAkB;EAClB,gBAAgB;AAClB;;AAEA;EACE,oBAAoB;EACpB,aAAa;EACb,WAAW;AACb;;AAEA;EACE,mDAAuC;AACzC;;AAEA;EACE,mDAAyC;AAC3C;AACA;EACE,mDAAwC;AAC1C;;AAEA;EACE,cAAc;EACd,aAAa;EACb,uBAAuB;AACzB;;AAEA;EACE,YAAY;EACZ,iBAAiB;AACnB;;AAEA;EACE,sBAAsB;EACtB,WAAW;EACX,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,qCAAqC;EACrC,SAAS;AACX;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,iCAAiC;EACjC,6BAA6B;AAC/B;;AAEA;EACE,WAAW;EACX,YAAY;AACd;;AAEA;EACE,WAAW;EACX,WAAW;AACb;;AAEA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;AAEA;EACE,YAAY;EACZ,aAAa;EACb,uBAAuB;EACvB,uBAAuB;EACvB,qCAAqC;EACrC,qBAAqB;EACrB,2BAA2B;AAC7B;;AAEA;EACE,iCAAiC;EACjC,4BAA4B;EAC5B,aAAa;EACb,iBAAiB;EACjB,6BAA6B;AAC/B;;AAEA;EACE,YAAY;EACZ,iCAAiC;EACjC,YAAY;EACZ,eAAe;EACf,aAAa;EACb,sBAAsB;EACtB,SAAS;AACX;;AAEA;EACE,sBAAsB;AACxB;;AAEA;EACE,sBAAsB;AACxB;;AAEA;EACE,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,SAAS;AACX;;AAEA;EACE,sBAAsB;AACxB;AACA;EACE,aAAa;EACb,SAAS;AACX;;AAEA;EACE,UAAU;AACZ","sourcesContent":["body {\n  --fs-1: 2rem;\n  --fs-2: 1.5rem;\n  --fs-3: 1rem;\n  --icon-1: 3rem;\n  --icon-2: 2rem;\n  --icon-3: 1rem;\n  --box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.7);\n  --accent-color: rgb(92, 168, 92);\n  --bg-lvl-1: #121212;\n  --bg-lvl-2: rgba(255, 255, 255, 0.05);\n}\n\n.dark-theme {\n  background-color: var(--bg-lvl-1);\n  color: white;\n}\n\n.icon-1 {\n  display: block;\n  height: var(--icon-1);\n  width: var(--icon-1);\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-position: center;\n}\n\n.icon-2 {\n  display: block;\n  height: var(--icon-2);\n  width: var(--icon-2);\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-position: center;\n}\n\n.icon-3 {\n  font-size: var(--icon-3);\n}\n\n.icon-dark {\n  background-color: white;\n}\n\n.icon-light {\n  background-color: #121212;\n}\n\n.content {\n  display: flex;\n  flex-direction: column;\n  box-sizing: border-box;\n  padding: 2em 0;\n}\n\n.header,\n.main,\n.footer {\n  box-sizing: border-box;\n  padding: 0 2rem;\n}\n\n.header {\n  box-sizing: border-box;\n  padding: 0 2rem;\n  display: flex;\n  justify-content: center;\n  background-color: var(--accent-color);\n  transform: scaleY(2) translateY(-35.5%) skewY(-7deg);\n  width: 100vw;\n  box-shadow: var(--box-shadow);\n}\n\n.header-container {\n  display: flex;\n  max-width: 1000px;\n  transform: translateY(35.5%) skewY(7deg) scaleY(0.5);\n}\n\n.header-image {\n  box-shadow: var(--box-shadow);\n  width: 30%;\n  height: auto;\n  z-index: 1;\n}\n\n.header-background {\n  margin: 2rem 0;\n}\n\n.header-info-container {\n  height: 100%;\n  width: 100%;\n  color: inherit;\n  background-color: var(--bg-lvl-2);\n  box-shadow: var(--box-shadow);\n  box-sizing: border-box;\n  padding: 1.5rem;\n  display: flex;\n  gap: 1rem;\n  flex-direction: column;\n  justify-content: space-between;\n}\n\n.header-title {\n  align-self: flex-start;\n  font-size: var(--fs-1);\n}\n\n.header-info {\n  font-size: var(--fs-2);\n  line-height: 2rem;\n  width: 100%;\n  align-self: center;\n  text-align: left;\n}\n\n.header-buttons {\n  align-self: flex-end;\n  display: flex;\n  gap: 0.5rem;\n}\n\n.github {\n  mask-image: url('../assets/github.svg');\n}\n\n.linkedin {\n  mask-image: url('../assets/linkedin.svg');\n}\n.twitter {\n  mask-image: url('../assets/twitter.svg');\n}\n\n.main {\n  margin: 4rem 0;\n  display: flex;\n  justify-content: center;\n}\n\n.section {\n  flex-grow: 1;\n  max-width: 1000px;\n}\n\n.project-section-title {\n  font-size: var(--fs-1);\n  width: 100%;\n  text-align: left;\n  margin-bottom: 2rem;\n}\n\n.card-container {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 2rem;\n}\n\n.project-card {\n  display: flex;\n  flex-direction: column;\n  aspect-ratio: 4 / 5;\n  background-color: var(--bg-lvl-2);\n  box-shadow: var(--box-shadow);\n}\n\n.screenshot {\n  width: 100%;\n  flex-grow: 1;\n}\n\n.project-info {\n  width: 100%;\n  height: 40%;\n}\n\n.project-title {\n}\n.project-buttons {\n}\n.link {\n}\n.project-description {\n}\n\n.footer {\n  flex-grow: 1;\n  display: flex;\n  justify-content: center;\n  align-items: flex-start;\n  background-color: var(--accent-color);\n  transform-origin: top;\n  transform: translateY(4rem);\n}\n\n.footer-container {\n  background-color: var(--bg-lvl-1);\n  transform: translateY(-4rem);\n  display: flex;\n  max-width: 1000px;\n  box-shadow: var(--box-shadow);\n}\n\n.footer-info {\n  height: 100%;\n  background-color: var(--bg-lvl-2);\n  flex-grow: 1;\n  padding: 1.5rem;\n  display: flex;\n  flex-direction: column;\n  gap: 1rem;\n}\n\n.footer-title {\n  font-size: var(--fs-1);\n}\n\n.footer-desc {\n  font-size: var(--fs-3);\n}\n\n.address {\n  font-size: var(--fs-3);\n}\n\n.contact-container {\n  display: flex;\n  gap: 1rem;\n}\n\n.contact-info {\n  font-size: var(--fs-3);\n}\n.footer-buttons {\n  display: flex;\n  gap: 1rem;\n}\n\n.footer-image {\n  width: 30%;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -273,6 +523,41 @@ module.exports = function (cssWithMappingToString) {
     }
   };
   return list;
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+  if (!url) {
+    return url;
+  }
+  url = String(url.__esModule ? url.default : url);
+
+  // If url is already wrapped in quotes, remove them
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+  if (options.hash) {
+    url += options.hash;
+  }
+
+  // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+  return url;
 };
 
 /***/ }),
@@ -675,6 +960,36 @@ function styleTagTransform(css, styleElement) {
 }
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/assets/github.svg":
+/*!*******************************!*\
+  !*** ./src/assets/github.svg ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/img/github.aba1ece0.svg";
+
+/***/ }),
+
+/***/ "./src/assets/linkedin.svg":
+/*!*********************************!*\
+  !*** ./src/assets/linkedin.svg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/img/linkedin.eaccfc4b.svg";
+
+/***/ }),
+
+/***/ "./src/assets/twitter.svg":
+/*!********************************!*\
+  !*** ./src/assets/twitter.svg ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/img/twitter.77a2f573.svg";
+
 /***/ })
 
 /******/ 	});
@@ -703,6 +1018,9 @@ module.exports = styleTagTransform;
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -728,6 +1046,18 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -742,6 +1072,55 @@ module.exports = styleTagTransform;
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
