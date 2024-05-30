@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -43,7 +44,7 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif|ttf|otf)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'assets/img/[name].[hash:8][ext]',
+          filename: 'assets/img/[name][ext]',
         },
       },
     ],
@@ -57,5 +58,6 @@ module.exports = {
         collapseWhitespace: false,
       },
     }),
+    new CleanWebpackPlugin(),
   ],
 };

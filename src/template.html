@@ -9,25 +9,35 @@
     <div class="content">
       <header class="header">
         <div class="header-container">
-          <img
-            src="./assets/ben_long.jpeg"
-            alt="Ben Long"
-            class="header-image"
-          />
+          <picture class="header-image-container">
+            <source
+              class="header-image"
+              srcset="./assets/ben_long_small.jpeg"
+              media="(max-width: 500px)"
+            />
+            <source
+              class="header-image"
+              srcset="./assets/ben_long_medium.jpeg"
+              media="(max-width: 1000px)"
+            />
+            <img
+              class="header-image"
+              src="./assets/ben_long_large.jpeg"
+              alt="Ben Long"
+            />
+          </picture>
           <div class="dark-theme header-background">
-            <div class="header-info-container">
-              <h1 class="header-title">About Me</h1>
-              <p class="header-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                in culpa laborum perspiciatis aut ex, repudiandae asperiores
-                ducimus molestiae fuga ipsa, mollitia veritatis! Voluptate
-                voluptates numquam porro, id necessitatibus officiis?
-              </p>
-              <div class="header-buttons">
-                <a href="" class="github icon-2 icon-dark"></a>
-                <a href="" class="linkedin icon-2 icon-dark"></a>
-                <a href="" class="twitter icon-2 icon-dark"></a>
-              </div>
+            <h1 class="header-title">About Me</h1>
+            <p class="header-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+              in culpa laborum perspiciatis aut ex, repudiandae asperiores
+              ducimus molestiae fuga ipsa, mollitia veritatis! Voluptate
+              voluptates numquam porro, id necessitatibus officiis?
+            </p>
+            <div class="header-buttons">
+              <a href="" class="github icon-2 icon-dark"></a>
+              <a href="" class="linkedin icon-2 icon-dark"></a>
+              <a href="" class="twitter icon-2 icon-dark"></a>
             </div>
           </div>
         </div>
@@ -37,7 +47,12 @@
           <h1 class="project-section-title">My Projects</h1>
           <div class="card-container">
             <div class="project-card">
-              <div class="screenshot"></div>
+              <img
+                src="./assets/battleship-screenshot.png"
+                alt="Battleship"
+                class="screenshot"
+                id="battleship-image"
+              />
               <div class="project-info">
                 <h3 class="project-title">Battleship</h3>
                 <div class="project-buttons">
@@ -59,7 +74,12 @@
               </div>
             </div>
             <div class="project-card">
-              <div class="screenshot"></div>
+              <img
+                src="./assets/weather-screenshot.png"
+                alt="Weather App"
+                class="screenshot"
+                id="weather-image"
+              />
               <div class="project-info">
                 <h3 class="project-title">Weather App</h3>
                 <div class="project-buttons">
@@ -81,7 +101,12 @@
               </div>
             </div>
             <div class="project-card">
-              <div class="screenshot"></div>
+              <img
+                src="./assets/dew-it-screenshot.png"
+                alt="To-do List"
+                class="screenshot"
+                id="todo-image"
+              />
               <div class="project-info">
                 <h3 class="project-title">Dew-it</h3>
                 <div class="project-buttons">
@@ -103,7 +128,12 @@
               </div>
             </div>
             <div class="project-card">
-              <div class="screenshot"></div>
+              <img
+                src="./assets/sword-shield-bow-screenshot.png"
+                alt="Sword, Shield, Bow"
+                class="screenshot"
+                id="ssb-image"
+              />
               <div class="project-info">
                 <h3 class="project-title">Sword, Shield, Bow</h3>
                 <div class="project-buttons">
@@ -125,7 +155,12 @@
               </div>
             </div>
             <div class="project-card">
-              <div class="screenshot"></div>
+              <img
+                src="./assets/longhouse-tavern-screenshot.png"
+                alt="Longhouse Tavern"
+                class="screenshot"
+                id="restaurant-image"
+              />
               <div class="project-info">
                 <h3 class="project-title">Longhouse Tavern</h3>
                 <div class="project-buttons">
@@ -147,7 +182,12 @@
               </div>
             </div>
             <div class="project-card">
-              <div class="screenshot"></div>
+              <img
+                src="./assets/library-screenshot.png"
+                alt="Library"
+                class="screenshot"
+                id="library-image"
+              />
               <div class="project-info">
                 <h3 class="project-title">Library</h3>
                 <div class="project-buttons">
@@ -173,7 +213,7 @@
       </main>
       <footer class="footer">
         <div class="footer-container">
-          <div class="footer-info">
+          <div class="footer-info dark-theme">
             <h1 class="footer-title">Contact Me</h1>
             <p class="footer-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
@@ -196,11 +236,23 @@
               <a href="" class="twitter icon-1 icon-dark"></a>
             </div>
           </div>
-          <img
-            src="./assets/ben_long.jpeg"
-            alt="Ben Long"
-            class="footer-image"
-          />
+          <picture class="footer-image-container">
+            <source
+              class="footer-image"
+              srcset="./assets/ben_long_small.jpeg"
+              media="(max-width: 500px)"
+            />
+            <source
+              class="footer-image"
+              srcset="./assets/ben_long_medium.jpeg"
+              media="(max-width: 1000px)"
+            />
+            <img
+              class="footer-image"
+              src="./assets/ben_long_large.jpeg"
+              alt="Ben Long"
+            />
+          </picture>
         </div>
       </footer>
     </div>
