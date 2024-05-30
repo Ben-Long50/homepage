@@ -1,13 +1,11 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlBundlerPlugin = require('html-bundler-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
   },
   devtool: 'source-map',
   devServer: {
@@ -23,12 +21,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(html)$/,
-        use: ['html-loader'],
-      },
-      {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: ['css-loader'],
       },
       {
         test: /\.js$/,
@@ -50,10 +44,20 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      title: '',
-      filename: 'index.html',
-      template: 'src/template.html',
+    new HtmlBundlerPlugin({
+      entry: {
+        index: './src/template.html', // => dist/index.html
+      },
+      js: {
+        // JS output filename
+        filename: 'js/[name].[contenthash:8].js',
+        // inline: true, // inject JS into HTML
+      },
+      css: {
+        // CSS output filename
+        filename: 'css/[name].[contenthash:8].css',
+        // inline: true, // inject CSS into HTML
+      },
       minify: {
         collapseWhitespace: false,
       },
